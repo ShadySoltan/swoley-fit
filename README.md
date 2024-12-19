@@ -1,2 +1,2 @@
 # swoley-fit
- Implementation of a gym web application for creating gym workout plan for users
+ The ultimate gym training app built with react & tailwindCSS
