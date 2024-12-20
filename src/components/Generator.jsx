@@ -58,7 +58,7 @@ export default function Generator(props) {
                         <button onClick={() => {
                             setMuscles([])
                             setPoison(type)
-                        }} className={'bg-slate-950 border  duration-200 px-4 transform transition-transform duration-300 hover:scale-105 hover:bg-blue-950 hover:border-blue-600 py-3 rounded-lg ' + (type === poison ? ' border-blue-600 bg-blue-950' : ' border-blue-400')} key={typeIndex}>
+                        }} className={'bg-slate-950 border  duration-200 px-4 transform transition-transform duration-300 hover:scale-105 hover:bg-blue-950 hover:border-blue-600 py-3 rounded-lg ' + (type === poison ? 'border-blue-600 bg-violet-950' : ' border-blue-400')} key={typeIndex}>
                             <p className='capitalize'>{type.replaceAll('_', " ")}</p>
                         </button>
                     )
@@ -76,7 +76,7 @@ export default function Generator(props) {
                             return (
                                 <button onClick={() => {
                                     updateMuscles(muscleGroup)
-                                }} key={muscleGroupIndex} className={'hover:text-blue-400 duration-200 ' + (muscles.includes(muscleGroup) ? ' text-blue-400' : ' ')}>
+                                }} key={muscleGroupIndex} className={'hover:text-blue-400 duration-200 ' + (muscles.includes(muscleGroup) ? ' text-blue-400 bg-violet-950' : ' ')}>
                                     <p className='uppercase'>{muscleGroup.replaceAll('_', ' ')}</p>
                                 </button>
                             )
@@ -90,7 +90,7 @@ export default function Generator(props) {
                     return (
                         <button onClick={() => {
                             setGoal(scheme)
-                        }} className={'bg-slate-950 border transform transition-transform duration-300 hover:scale-105 hover:bg-blue-950  duration-200 hover:border-blue-600 py-3 rounded-lg px-4 ' + (scheme === goal ? ' border-blue-600 bg-blue-950' : ' border-blue-400')} key={schemeIndex}>
+                        }} className={'bg-slate-950 border transform transition-transform duration-300 hover:scale-105 hover:bg-blue-950  duration-200 hover:border-blue-600 py-3 rounded-lg px-4 ' + (scheme === goal ? ' border-blue-600 bg-violet-950' : ' border-blue-400')} key={schemeIndex}>
                             <p className='capitalize'>{scheme.replaceAll('_', " ")}</p>
                         </button>
                     )
